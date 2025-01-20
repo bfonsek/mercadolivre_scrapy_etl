@@ -1,50 +1,50 @@
-# Web Scraping de Tênis no Mercado Livre
+# Shoes Web Scraping in Mercado Livre
 
-Este projeto tem como objetivo realizar scraping de informações sobre tênis vendidos na plataforma Mercado Livre, utilizando a biblioteca Scrapy para extrair os dados, e o Streamlit para gerar gráficos e visualizar as informações de forma interativa.
+This project aims to scrape information about sneakers sold on the Mercado Livre platform, using the Scrapy library to extract the data, and Streamlit to generate graphics and visualize the information interactively.
 
-## Funcionalidades
+## Features
 
-- **Web Scraping com Scrapy**: Coleta informações de tênis vendidos no Mercado Livre, como preço, marca, modelo, quantidade de vendas, avaliações, etc.
-- **Análise e Visualização com Streamlit**: Gera gráficos interativos para análise dos dados extraídos, como distribuição de preços, popularidade das marcas, etc.
-- **Exportação de Dados**: Exporta os dados coletados em formato CSV para análise adicional.
+- **Web Scraping with Scrapy**: Collects information about sneakers sold on Mercado Livre, such as price, brand, model, reviews, etc.
+- **Analysis and Visualization with Streamlit**: Generates interactive graphs for analyzing extracted data, such as price distribution, brand popularity, etc.
+- **Data Export**: Exports collected data in CSV format for further analysis.
 
-## Tecnologias Utilizadas
+## Used Technologies
 
-- **Python 3.x**
-- **Scrapy**: Framework para web scraping.
-- **Streamlit**: Biblioteca para criação de interfaces web interativas e gráficos.
-- **Pandas**: Manipulação de dados.
+- **Python 3.9**
+- **Scrapy**: Framework for web scraping.
+- **Streamlit**: Library for creating interactive web interfaces and graphics.
+- **Pandas**: Data manipulation.
 
-## Instalação
+## Configuring the environment
 
-### 1. Clonar o Repositório
+### 1. Clone Repository
 
 ```bash
 git clone https://github.com/bfonsek/mercadolivre_scrapy_etl.git
 cd web_scrap_etl
 ```
 
-### 2. Criar ambiente virtual
+### 2. Create Virtual Environment
 ```bash
 Make venv
 ```
 
-### 3. Instalar Dependencias
+### 3. Install Dependencies
 ```bash
 Make install
 ```
 
-### 4. Executar Scrapping
+### 4. Run Scrapping
 ```bash
 Make run-scrap
 ```
 
-### 5. Executar Transformacao
+### 5. Run Transformation
 ```bash
 Make run-transformation
 ```
 
-### 6. Executar Dashboard
+### 6. Run Dashboard
 ```
 Make dashboard
 ```
