@@ -45,6 +45,6 @@ Make run-transformation
 ```
 
 ### 6. Run Dashboard
-```
+```bash
 Make dashboard
 ```
