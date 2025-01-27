@@ -1,5 +1,5 @@
 import scrapy
-
+import logging
 
 class MercadolivreSpider(scrapy.Spider):
     name = "mercadolivre"
@@ -10,6 +10,7 @@ class MercadolivreSpider(scrapy.Spider):
 
     def parse(self, response):
 
+        logging.info("Starting the scrapping of shoes in mercado livre")
         products = response.css('div.poly-card__content')
 
         for  product in products:
@@ -31,6 +32,8 @@ class MercadolivreSpider(scrapy.Spider):
 
             next_page = response.css('li.andes-pagination__button.andes-pagination__button--next a::attr(href)').get()
             yield scrapy.Request(url=next_page, callback=self.parse)
+
+        logging.info("Extraction Finished")
             #if self.page_count < self.max_pages:
             #    next_page = response.css('li.andes-pagination__button.andes-pagination__button--next a::attr(href)').get()
             #    if next_page:
