@@ -3,13 +3,13 @@ install:
 
 run-scrap:
 	cd src/collect/collect && \
-	scrapy crawl mercadolivre -o ../data/data.csv
+	scrapy crawl mercadolivre -o ../../data/data.csv
 
 run-transformation:
-	python3 transformation/main.py
+	python3 src/transformation/main.py
 
 venv:
 	python3 --version && python3 -m venv venv
 
 dashboard:
-	streamlit run dashboard/app.py
+	streamlit run src/dashboard/app.py

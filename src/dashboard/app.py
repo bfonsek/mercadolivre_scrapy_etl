@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import sqlite3
 
-conn = sqlite3.connect('../data/quotes.db')
+conn = sqlite3.connect('data/quotes.db')
 
 df = pd.read_sql_query('SELECT * FROM mercadolibre_itens', conn)
 
